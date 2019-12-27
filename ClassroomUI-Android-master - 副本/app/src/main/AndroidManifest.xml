@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          package="com.bugcoder.sc.student">
+
+    <uses-permission android:name="android.permission.INTERNET"/>
+
+    <application
+            android:allowBackup="true"
+            android:icon="@drawable/logo"
+            android:label="@string/app_name"
+            android:roundIcon="@mipmap/ic_launcher_round"
+            android:supportsRtl="true"
+            android:theme="@style/AppTheme">
+        <activity android:name="com.bugcoder.sc.student.Settings"
+                  android:configChanges="keyboardHidden|orientation|screenSize"
+                  android:label=""
+                  android:screenOrientation="portrait"
+                  android:theme="@style/AppTheme.NoActionBar"></activity>
+        <activity
+                android:name="com.bugcoder.sc.student.CourseLiving"
+                android:configChanges="orientation|screenSize"
+                android:label="Course Living"/>
+        <activity
+                android:name="com.bugcoder.sc.student.Announcements"
+                android:configChanges="orientation|screenSize"
+                android:label="Announcements"/>
+        <activity
+                android:name="com.bugcoder.sc.student.Lectures"
+                android:configChanges="orientation|screenSize"
+                android:label="Lectures"/>
+        <activity
+                android:name="com.bugcoder.sc.student.Events"
+                android:configChanges="orientation|screenSize"
+                android:label="Events"/>
+        <activity
+                android:name="com.bugcoder.sc.student.Courses"
+                android:configChanges="orientation|screenSize"
+                android:label="Courses"/>
+        <activity
+                android:name="com.bugcoder.sc.student.MyProfile"
+                android:configChanges="orientation|screenSize"
+                android:label="My Profile"/>
+        <activity
+                android:name="com.bugcoder.sc.student.Home"
+                android:label="@string/title_activity_home"
+                android:theme="@style/AppTheme.NoActionBar"/>
+        <activity
+                android:name="com.bugcoder.sc.student.SignupScreen"
+                android:configChanges="orientation|screenSize"
+                android:theme="@style/MyAppTheme"/>
+        <activity
+                android:name="com.bugcoder.sc.student.LoginScreen"
+                android:configChanges="orientation|screenSize"
+                android:theme="@style/MyAppTheme"/>
+        <activity
+            android:name=".MyTalk"
+            android:configChanges="orientation|screenSize"
+            android:label="讨论区"
+            />
+        <activity
+            android:name=".TalkMain"
+            android:configChanges="orientation|screenSize"
+            android:label="提问区"
+           />
+        <activity
+                android:name="com.bugcoder.sc.student.SplashScreen"
+                android:configChanges="orientation|screenSize"
+                android:theme="@style/Theme.AppCompat.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
